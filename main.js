@@ -1,9 +1,10 @@
 document.querySelector('img').onclick = function(){
-  var imgsrc = document.querySelector('img').getAttribute('src');
+  var myImg = document.querySelector('img');
+  var imgsrc = myImg.getAttribute('src');
   if(imgsrc === 'Sad_smiley.jpg')
   {
-    document.querySelector('img').setAttribute('src','Big_smile.png');
+    myImg.setAttribute('src','Big_smile.png');
   }else {
-    document.querySelector('img').setAttribute('src','Sad_smiley.jpg');
+    myImg.setAttribute('src','Sad_smiley.jpg');
   }
 }
